@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("#closenav").hide();
 	$(".viewpopup").hide();
-  $(".slider-container").slideUP(500);
+  
 	
 	var closenav =$("#closenav"),
 		navbtn =$("#navbtn"),

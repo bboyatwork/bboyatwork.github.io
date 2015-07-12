@@ -665,6 +665,16 @@ a:after {
     display: block;
 }
 
+.chatBubble {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    font-size: 2em;
+    color: red;
+    text-align: center;
+}
+
+/*-------------other stuff--------------*/
 .dialog1,
 .dialog__overlay {
     width: 100%;

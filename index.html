@@ -24,8 +24,8 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+
+
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -33,7 +33,7 @@
       <![endif]-->
     </head>
     <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-      <div class="slider-container clearfix">
+      <div class="slider-container clearfix ">
         <h1>Creative Arts Factory</h1>
       </div>
 
@@ -51,8 +51,8 @@
               <ul class="nav navbar-nav">
                 <li><a href="#home" class="smoothScroll">Home</a></li>
                 <li> <a href="#about" class="smoothScroll"> About</a></li>
-                <li> <a href="#" class="show-newsletter"> Contact</a></li>
-                <li> <a href="#dona" class="smoothScroll"> <strong style="color:RED;">DONATE</strong></a></li></ul>
+                <li> <a href="#contact" class="show-newsletter smoothScroll"> Contact</a></li>
+                <li> <a href="#donate" class="smoothScroll"> <strong style="color:RED;">DONATE</strong></a></li></ul>
                 <h2 style="padding-left:380px;color:#FFFFFF;">Creative Arts Factory</h2>
               </div><!--/.nav-collapse -->
             </div>
@@ -62,7 +62,7 @@
 
 
         <!-- ==== HEADERWRAP ==== -->
-        <div id="headerwrap" id="home" name="home">
+        <div id="headerwrap">
          <div class="title-style">
           <header class="clearfix">
             <h1><span class="icon icon-home"></span></h1>
@@ -73,7 +73,7 @@
       </div><!-- /headerwrap -->
 
       <!-- ==== GREYWRAP ==== -->
-      <div id="greywrap">    <img src ="images/cafevanston_full.gif" width="400px" />
+      <div id="greywrap">    <img src ="images/cafevanston_full.gif" width="400px" id="home"/>
        <div class="row">
         <div class="col-lg-4 callout">
          <span class="icon icon-stack"></span>
@@ -98,7 +98,7 @@
    </div><!-- greywrap -->
 
    <!-- ==== ABOUT ==== -->
-   <div class="container" id="about" name="about">
+   <div class="container" id="about">
      <div class="row white">
        <br>
        <h1 class="centered">A LITTLE ABOUT OUR ORGANIZATION</h1>
@@ -177,12 +177,12 @@
       </div>
       </div>
       <h3>Support Us</h3>
-      <!-- <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="3eb50c43-589c-4730-b53a-0cf451566bb6" /> <input type = "image" src ="//content.authorize.net/images/donate-gold.gif" /> </form>--><div id="donate" name="donate"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <div id="donate"><!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="7EPR89DS4YLLQ">
       <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
       <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form></div>
+    </form> --></div>
 
     <p>If this concept interests you at all, or if you are unavailable to directly take part but still want to help in other ways, or want to know more, please do contact me ASAP. I will send you a copy of our business plan and incorporation papers for our new organization, Creative Arts Factory of Evanston. Of course, financial help is always needed, as is free professional services in any applicable area of the organization as well.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -Alicia</p>
     <!-- col -->
@@ -194,6 +194,8 @@
         </div>
       </div>
     </div>
+
+    
       
       <!-- container -->
 
@@ -202,7 +204,17 @@
         <h4>Created by<a href="http://creativeartsofevanston.org"> Creative Arts Factory</a> - © 2014&mdash;<script> document.write(new Date().getFullYear()) </script></h4>
       </div>
     </div>
-
+    <div class="chatBubble">
+      <span class="icon icon-bubble-dots "></span><br>
+        <div id="donate">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="7EPR89DS4YLLQ">
+            <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -213,6 +225,16 @@
     <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
     <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+      <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('require', 'displayfeatures');
+      ga('create', 'UA-56096270-1', 'auto');
+      ga('send', 'pageview');
 
+    </script>
   </body>
   </html>
