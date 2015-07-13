@@ -17,9 +17,9 @@
 
   // Create a splash page with the site name that will pull up after page is loaded. 
     // Place in a container div
-$(document).ready(function(){
-  $(".slider-container").slideUp(8000, "swing");
-});
+// $(document).ready(function(){
+//   $(".slider-container").slideUp(8000, "swing");
+// });
   // maybe have the logo fade in as well
 
 // ----------------------------------
@@ -31,9 +31,16 @@ $(document).ready(function(){
     // Use fixed positioning
   
   // Open forms in a call out window if in full view mode
-  $(".show-newsletter").on('click', function(){
-    $(".newsletter").addClass("calloutForm");
-    $(".somedialog").addClass("overlayBackground");
+  // $(".show-newsletter").on('click', function(){
+  //   $(".newsletter").addClass("calloutForm");
+  //   $(".somedialog").addClass("overlayBackground");
+  // });
+
+  $("#openContact").on('click', function(){
+    $("#contactdialog").removeClass("dialog");
+    $(".dialog__content").addClass("calloutForm");
+    $(".dialog__overlay").addClass("overlayBackground");
+
   });
 
   // When an input box is selected in a form outline outline it red to let user know it is active

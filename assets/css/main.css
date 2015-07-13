@@ -646,11 +646,12 @@ a:after {
 }
 
 /*Custom*/
-.newsletter{display: none;}
+.newsletter, .dialog{display: none;}
+
 .calloutForm {
     position: fixed;
-/*    width: 600px;
-*/    
+    width: 600px;
+    
     top: 30%;
     left: 25%;
     z-index: 100;
@@ -672,10 +673,11 @@ a:after {
     font-size: 2em;
     color: red;
     text-align: center;
+    z-index: 5;
 }
 
 /*-------------other stuff--------------*/
-.dialog1,
+/*.dialog1,
 .dialog__overlay {
     width: 100%;
     height: 100%;
@@ -686,4 +688,5 @@ a:after {
 .dialog1 {
     position: fixed;
     pointer-events: none;
-}
+}*/
+
