@@ -64,21 +64,21 @@
   // Create scroll to top button that will smoothly scroll window to the very top of the page
     // Once the user scrolls down half the page show the scroll to top button will appear about 30% fixed from the top of the page
 
-    var distanceFromTopToNav = $('.main-nav').offset().top;
+    // var distanceFromTopToNav = $('.main-nav').offset().top;
 
 // find out how far down the page the user has scrolled
-$(window).on('scroll', function(){
+// $(window).on('scroll', function(){
   
-  var viewableOffset = $(".main-nav").offset().top - $(window).scrollTop();
-  console.log(viewableOffset);
+//   var viewableOffset = $(".main-nav").offset().top - $(window).scrollTop();
+//   console.log(viewableOffset);
     // if the user is so far down the page = to full distance or greater then where the nav is positioned fromt he top of the page 
-  if($(this).scrollTop() >= distanceFromTopToNav)
-  {
-    $('nav').addClass("scrolled");
-  }  
-  else{
-    $('nav').removeClass("scrolled");
-  }
+  // if($(this).scrollTop() >= distanceFromTopToNav)
+  // {
+  //   $('nav').addClass("scrolled");
+  // }  
+  // else{
+  //   $('nav').removeClass("scrolled");
+  // }
 
      
 // -------------------------------------------

@@ -665,7 +665,6 @@ a:after {
     color: #444;
     border-radius: 4px;
     background-color: white;
-
     z-index: 2000;
     opacity: 1;
     visibility: visible;
