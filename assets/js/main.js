@@ -22,6 +22,8 @@
  });
   // maybe have the logo fade in as well
 
+  // have images in first top 3rd slide to different images 
+
 // ----------------------------------
 // Global Action/Animation
 // ----------------------------------
@@ -36,7 +38,8 @@
   //   $(".somedialog").addClass("overlayBackground");
   // });
 
-  $("#openContact").on('click', function(){
+  $("#openContact").on('click', function(e){
+    e.preventDefault(); 
     $("#contactdialog").removeClass("dialog");
     $(".dialog__content").addClass("calloutForm");
     $(".dialog__overlay").addClass("overlayBackground");
@@ -60,6 +63,23 @@
 
   // Create scroll to top button that will smoothly scroll window to the very top of the page
     // Once the user scrolls down half the page show the scroll to top button will appear about 30% fixed from the top of the page
+
+    var distanceFromTopToNav = $('.main-nav').offset().top;
+
+// find out how far down the page the user has scrolled
+$(window).on('scroll', function(){
+  
+  var viewableOffset = $(".main-nav").offset().top - $(window).scrollTop();
+  console.log(viewableOffset);
+    // if the user is so far down the page = to full distance or greater then where the nav is positioned fromt he top of the page 
+  if($(this).scrollTop() >= distanceFromTopToNav)
+  {
+    $('nav').addClass("scrolled");
+  }  
+  else{
+    $('nav').removeClass("scrolled");
+  }
+
      
 // -------------------------------------------
 // Interactive Photo Gallery Action/Animation
