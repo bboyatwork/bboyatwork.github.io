@@ -1,3 +1,8 @@
+/*
+ * Author: Micah Jefferson
+ * URL: http://bboyatwork.com
+ */
+
 // ----------------------------------
 // Layout - CSS
 // ----------------------------------
@@ -17,9 +22,10 @@
 
   // Create a splash page with the site name that will pull up after page is loaded. 
     // Place in a container div
- $(document).ready(function(){
-   $(".slider-container").slideUp(8000, "swing");
- });
+
+   $(".slider-container").slideUp(3000, "linear");
+
+
   // maybe have the logo fade in as well
 
   // have images in first top 3rd slide to different images 
@@ -27,7 +33,17 @@
 // ----------------------------------
 // Global Action/Animation
 // ----------------------------------
+$('.hamburger').on('click', function(e){
+  e.preventDefault();
+  $('body').addClass("active");
+  $('.hamburger').hide();
+});
 
+$('.close').on('click', function(e){
+  e.preventDefault();
+  $('body').removeClass("active");
+  $('.hamburger').show();
+});
 
   // Add sticky donate button to the bottom right of the page with highest z index, ( also a contact button?)
     // Use fixed positioning
@@ -43,7 +59,6 @@
     $("#contactdialog").removeClass("dialog");
     $(".dialog__content").addClass("calloutForm");
     $(".dialog__overlay").addClass("overlayBackground");
-
   });
 
   // When an input box is selected in a form outline outline it red to let user know it is active
