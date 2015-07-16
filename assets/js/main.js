@@ -39,7 +39,7 @@ $('.hamburger').on('click', function(e){
   $('.hamburger').hide();
 });
 
-$('.close').on('click', function(e){
+$('.close, nav a').on('click', function(e){
   e.preventDefault();
   $('body').removeClass("active");
   $('.hamburger').show();
@@ -57,10 +57,16 @@ $('.close').on('click', function(e){
   $("#openContact").on('click', function(e){
     e.preventDefault(); 
     $("#contactdialog").removeClass("dialog");
-    $(".dialog__content").addClass("calloutForm");
+    $("#contactdialog .dialog__content").addClass("calloutForm");
     $(".dialog__overlay").addClass("overlayBackground");
   });
 
+$(".show-newsletter").on('click', function(e){
+    e.preventDefault(); 
+    $("#newsletterDialog").removeClass("dialog");
+    $("#newsletterDialog .dialog__content").addClass("calloutForm");
+    $(".dialog__overlay").addClass("overlayBackground");
+  });
   // When an input box is selected in a form outline outline it red to let user know it is active
 
 
