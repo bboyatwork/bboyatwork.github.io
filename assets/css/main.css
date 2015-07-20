@@ -782,57 +782,8 @@ a:after {
     top: 1%;
     left: 1%;
     width: 25%;
-    min-width: 200px;
-    max-width: 300px;
-
-    z-index: 2000;
-    opacity: 1;
-    visibility: visible;
-    transition: all .3s ease-in-out;
-    }
-
-    .overlayBackground {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: all .3s ease-in-out;
-    background: rgba(192,192,192, .8); 
-    z-index: 100;
-    }
-
-}
-
-@media only screen and (max-width:400px) {
-    #headerwrap h1 {
-        font-size: 80px;
-    }
-
-
-    #headerwrap p {
-        font-size: 30px;
-        line-height: 38px;
-    }
-
-    .slider-container h1 {
-    font-size: 6em;
-    text-align: center;
-    }
-
-    .dialog{
-    opacity: 0;
-    visibility: hidden;
-    display:none;
-    }
-    
-    .calloutForm {
-    position: fixed;
-    top: 5%;
-    left: 2%;
-    width: 25%;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 280px;
+    max-width: 360px;
 
     z-index: 2000;
     opacity: 1;
