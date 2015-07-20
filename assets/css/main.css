@@ -170,6 +170,7 @@ nav li:first-child {
   top: 5%;
   left: 5%;
   background-color: rgba(250,250,250,.2)
+  z-index:1000;
 }
 
 .line {
@@ -246,6 +247,7 @@ border: 0px solid transparent;
     height: 100%;
     margin: 0;
     background-color: rgba(0, 0, 0, .8); 
+    z-index: 1;
 }
 
 /* Other styles */
@@ -282,9 +284,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider-container h1 {
-    margin: 20% 0 20% 10%;
+    margin: 10% 0 0 10%;
     font-size: 8em;
+    text-align: center;
     color: rgba(255,255,255,.8);
+
 }
 
 
@@ -750,6 +754,13 @@ a:after {
 	#headerwrap h1 {
 		font-size: 80px;
 	}
+
+    .slider-container h1 {
+    font-size: 6em;
+    text-align: center;
+
+
+}
 	#headerwrap p {
 		font-size: 30px;
 		line-height: 38px;

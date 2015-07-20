@@ -66,9 +66,27 @@ $(".show-newsletter").on('click', function(e){
     $("#newsletterDialog").removeClass("dialog");
     $("#newsletterDialog .dialog__content").addClass("calloutForm");
     $(".dialog__overlay").addClass("overlayBackground");
-  });
-  // When an input box is selected in a form outline outline it red to let user know it is active
 
+  });
+
+$('.dialog__overlay').on('click', function(e){
+  e.preventDefault();
+    $("#newsletterDialog").addClass("dialog");
+    $("#newsletterDialog .dialog__content").removeClass("calloutForm");
+    $(".dialog__overlay").removeClass("overlayBackground");
+
+
+
+  // When an input box is selected in a form outline outline it red to let user know it is active
+});
+
+$('.actionClose').on('click', function(e){
+    e.preventDefault();
+    $("#contactdialog").addClass("dialog");
+    $("#contactdialog .dialog__content").removeClass("calloutForm");
+    $(".dialog__overlay").removeClass("overlayBackground");
+
+});
 
 // ----------------------------------
 // Navigation Action/Animation
