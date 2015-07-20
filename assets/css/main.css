@@ -755,7 +755,7 @@ a:after {
 	.header{background-attachment: scroll;}
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-device-width:769px) and (max-width:769px) {
 	#headerwrap h1 {
 		font-size: 80px;
 	}
@@ -771,8 +771,8 @@ a:after {
     display:none;
     }
     .calloutForm {
-    top: 15%;
-    left: 20%;
+    top: 5%;
+    left: 10%;
     width: 40%;
     min-width: 320px;
     max-width: 400px;
