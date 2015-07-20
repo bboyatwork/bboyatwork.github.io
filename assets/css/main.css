@@ -800,7 +800,7 @@ a:after {
 	.header{background-attachment: scroll;}
 }
 
-@media all (min-device-width:375px) and (max-device-width:667px) and (orientation:portrait) {
+@media (max-width:480px) {
 	#headerwrap h1 {
 		font-size: 80px;
 	}
