@@ -69,22 +69,21 @@ $(".show-newsletter").on('click', function(e){
 
   });
 
-$('.dialog__overlay').on('click', function(e){
-  e.preventDefault();
-    $("#newsletterDialog").addClass("dialog");
-    $("#newsletterDialog .dialog__content").removeClass("calloutForm");
-    $(".dialog__overlay").removeClass("overlayBackground");
-
 
 
   // When an input box is selected in a form outline outline it red to let user know it is active
-});
 
-$('.actionClose').on('click', function(e){
+
+$(".actionClose").on('click', function(e){
     e.preventDefault();
     $("#contactdialog").addClass("dialog");
     $("#contactdialog .dialog__content").removeClass("calloutForm");
     $(".dialog__overlay").removeClass("overlayBackground");
+
+    $("#newsletterDialog").addClass("dialog");
+    $("#newsletterDialog .dialog__content").removeClass("calloutForm");
+    $(".dialog__overlay").removeClass("overlayBackground");
+
 
 });
 
@@ -134,6 +133,13 @@ $('.actionClose').on('click', function(e){
 // -------------------------------------------
 // Interactive Video Gallery Action/Animation
 // -------------------------------------------
+
+  $("#headerwrap").hover(
+    function(){
+    $(this).html('<video src="images/CAFe-draft.mp4" poster="images/evanston-posterimage.jpg" controls></video>').fadeIn(5000); 
+    }, function() {
+    $(this).find( "video:last" ).remove();
+  });
 
   // As the user hovers over the video in full view mode it will automatically start playing with no sound. Once the user clicks on the video / play button the video will start from the beginning with sound
 

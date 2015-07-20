@@ -44,14 +44,14 @@
 
       <!-- Fixed navbar -->
       <nav class="sidebar">
-        <h1><span class="icon icon-home"></span><a href="#" class="close">x</a></h1>
+        <div class="sidebar-header"><span class="icon icon-home"></span><a href="#" class="close">x</a></div>
         <ul>
           <li><a href="#home" class="smoothScroll">Home</a></li>
           <li> <a href="#about" class="smoothScroll"> About</a></li>
           <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
           <li> <a href="#newsletter" class="show-newsletter">CAFe Newsletter</a></li>
         </ul>
-        <!-- <h2 style="padding-left:380px;color:#FFFFFF;">Creative Arts Factory</h2> -->
+
       </nav>
 
       <!-- ==== HAMBURGER MENU ==== -->
@@ -69,27 +69,26 @@
      </div><!-- /headerwrap -->
 
      <!-- ==== GREYWRAP ==== -->
-     <div id="greywrap">    <img src ="images/cafevanston_full.gif" width="400px" id="home"/>
+     <div id="greywrap">    <img src ="images/cafevanston_full.gif" id="home" alt="evanston ariel view"/>
        <div class="row">
         <div class="col-lg-4 callout">
          <span class="icon icon-stack"></span>
-         <!--<h2>Creative Arts Factory</h2>-->
          <h2>Mission</h2>
          <p>To provide affordably accessible opportunities in the exploration and expression of music and other creative arts, including media production and journalism, as a gateway to the discovery of personal worth, responsibility and the desire to achieve. </p>
 
-       </div><!-- col-lg-4 -->
+       </div>
 
        <div class="col-lg-4 callout">
          <span class="icon icon-eye"></span>
          <h2>Vision</h2>
          <p>“To become a robust center for cultivating culturally diverse expressions of the arts and community media that motivates, enriches and establishes a path toward meaningful aspirations.” </p>
-       </div><!-- col-lg-4 -->	
+       </div>	
 
        <div class="col-lg-4 callout">
          <span class="icon icon-heart"></span>
          <h2>Crafted with Love</h2>
          <p>The team: Alicia O. Hempfling, Scott Sanders, Tracey Flores, Eric “BBoy Wicked” Delgado, Drew Bayly, Jen Halman, Micah Jefferson, Annette Wallace, Diego Vega, Dusty Ballard</p>
-       </div><!-- col-lg-4 -->	
+       </div>	
      </div><!-- row -->
    </div><!-- greywrap -->
 
@@ -113,11 +112,8 @@
           Interim Executive Director of Creative Arts Factory of Evanston </article>
 
           <p><a class="btn btn-success smoothScroll" href="#contact">Contact Us</a></p>
-				</div><!-- col-lg-6
-				
-				<div class="col-lg-6">
-					<p>USE THIS?</p> -->
-				</div><!-- col-lg-6 -->
+				</div>
+				</div>
 			</div><!-- row -->
       <!-- container -->
 
@@ -126,7 +122,7 @@
       <!-- ==== SECTION DIVIDER6 ==== -->
       <section class="section-divider textdivider divider6">
        <div class="container">
-        <h1>CRAFTED IN EVANSTON, IL</h1>
+        <h2>CRAFTED IN EVANSTON, IL</h2>
         <hr>
         <p>Coming Soon</p>
 
@@ -157,8 +153,8 @@
       <p>If this concept interests you at all, or if you are unavailable to directly take part but still want to help in other ways, or want to know more, please do contact me ASAP. I will send you a copy of our business plan and incorporation papers for our new organization, Creative Arts Factory of Evanston. Of course, financial help is always needed, as is free professional services in any applicable area of the organization as well.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -Alicia</p>
     </div>
 
-    <!-- container -->
-  </div>
+    
+  </div><!-- container -->
   <div id="footerwrap">
    <div class="container">
     <h4>Created by<a href="http://creativeartsofevanston.org"> Creative Arts Factory</a> - © 2014&mdash;<script> document.write(new Date().getFullYear()) </script>
@@ -166,7 +162,7 @@
     <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
   </div>
 </div>
-</div>
+
 
 <div id="newsletterDialog" class="dialog">
      
@@ -178,11 +174,12 @@
 
        <form class="form-horizontal" role="form">
         <div class="form-group">
-          <iframe src="https://docs.google.com/forms/d/1ifV34SPIEp6vu8BIbYnshDEl1cq3vGElMd6aNU7ieFo/viewform?embedded=true" width="370" height="400" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" seamless="seamless">Loading...</iframe>
+          <iframe src="https://docs.google.com/forms/d/1ifV34SPIEp6vu8BIbYnshDEl1cq3vGElMd6aNU7ieFo/viewform?embedded=true" width="370" height="400">Loading...</iframe>
         </div>
 
       </form><!-- form -->
-
+      <div><button class="actionClose" data-dialog-close>Close</button>
+    </div>
 
     </div> 
   </div>
@@ -204,7 +201,7 @@
         <input type="text" id="subject" name="subject" placeholder="Subject" required>
       </div>
       <div class="colm cf">
-        <textarea name="message" type="text" id="message" placeholder="Message" required></textarea>
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
       </div>
       <input type="submit" value="Send" id="submit">
     </form>
@@ -223,8 +220,8 @@
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="7EPR89DS4YLLQ">
-      <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
   </div>
 </div>
