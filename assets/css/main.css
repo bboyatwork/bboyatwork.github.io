@@ -755,12 +755,12 @@ a:after {
 	.header{background-attachment: scroll;}
 }
 
-@media all and (max-device-width:769px) {
+@media only screen (min-device-width:375px) and (max-device-width:667px) and (orientation:portrait) {
 	#headerwrap h1 {
 		font-size: 80px;
 	}
 
-    
+
     #headerwrap p {
         font-size: 30px;
         line-height: 38px;
@@ -776,13 +776,14 @@ a:after {
     visibility: hidden;
     display:none;
     }
+
     .calloutForm {
     position: fixed;
-    top: 5%;
-    left: 10%;
-    width: 40%;
-    min-width: 320px;
-    max-width: 400px;
+    top: 1%;
+    left: 1%;
+    width: 25%;
+    min-width: 200px;
+    max-width: 300px;
 
     z-index: 2000;
     opacity: 1;
@@ -803,9 +804,15 @@ a:after {
 
 }
 
-/*@media screen and (max-width:769px) {
+@media only screen and (max-width:400px) {
     #headerwrap h1 {
         font-size: 80px;
+    }
+
+
+    #headerwrap p {
+        font-size: 30px;
+        line-height: 38px;
     }
 
     .slider-container h1 {
@@ -813,18 +820,19 @@ a:after {
     text-align: center;
     }
 
-     .dialog{
+    .dialog{
     opacity: 0;
     visibility: hidden;
     display:none;
     }
+    
     .calloutForm {
     position: fixed;
     top: 5%;
-    left: 10%;
-    width: 40%;
-    min-width: 320px;
-    max-width: 400px;
+    left: 2%;
+    width: 25%;
+    min-width: 200px;
+    max-width: 300px;
 
     z-index: 2000;
     opacity: 1;
@@ -841,9 +849,10 @@ a:after {
     transition: all .3s ease-in-out;
     background: rgba(192,192,192, .8); 
     z-index: 100;
+    }
 
 }
-}*/
+
 
 
 
