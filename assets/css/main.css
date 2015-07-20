@@ -74,7 +74,12 @@ body {
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 
- img {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
     vertical-align: middle;
 }
 
@@ -758,7 +763,24 @@ a:after {
     .slider-container h1 {
     font-size: 6em;
     text-align: center;
+    }
 
+     .dialog{
+    opacity: 0;
+    visibility: hidden;
+    display:none;
+    }
+    .calloutForm {
+    top: 15%;
+    left: 20%;
+    width: 40%;
+    min-width: 320px;
+    max-width: 400px;
+
+    }
+
+
+}
 
 }
 	#headerwrap p {
@@ -815,16 +837,4 @@ a:after {
 /*-------------other stuff--------------*/
 
 
-/*.dialog1,
-.dialog__overlay {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.dialog1 {
-    position: fixed;
-    pointer-events: none;
-}*/
 
