@@ -741,6 +741,51 @@ a:after {
 }
 */
 
+/*Custom*/
+ .dialog{
+  opacity: 0;
+  visibility: hidden;
+  display:none;
+}
+
+.calloutForm {
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    width: 50%;
+    min-width: 320px;
+    max-width: 630px;
+
+    z-index: 2000;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+
+
+}
+
+.overlayBackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    background: rgba(192,192,192, .8); 
+    z-index: 100;
+
+}
+
+.chatBubble {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    font-size: 2em;
+    color: red;
+    text-align: center;
+    z-index: 5;
+}
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -755,7 +800,7 @@ a:after {
 	.header{background-attachment: scroll;}
 }
 
-@media only screen (min-device-width:375px) and (max-device-width:667px) and (orientation:portrait) {
+@media all (min-device-width:375px) and (max-device-width:667px) and (orientation:portrait) {
 	#headerwrap h1 {
 		font-size: 80px;
 	}
@@ -807,50 +852,7 @@ a:after {
 
 
 
-/*Custom*/
- .dialog{
-  opacity: 0;
-  visibility: hidden;
-  display:none;
-}
 
-.calloutForm {
-    position: fixed;
-    top: 25%;
-    left: 30%;
-    width: 50%;
-    min-width: 320px;
-    max-width: 630px;
-
-    z-index: 2000;
-    opacity: 1;
-    visibility: visible;
-    transition: all .3s ease-in-out;
-
-
-}
-
-.overlayBackground {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: all .3s ease-in-out;
-    background: rgba(192,192,192, .8); 
-    z-index: 100;
-
-}
-
-.chatBubble {
-    position: fixed;
-    bottom: 5%;
-    right: 2%;
-    font-size: 2em;
-    color: red;
-    text-align: center;
-    z-index: 5;
-}
 
 /*-------------other stuff--------------*/
 
